@@ -90,3 +90,6 @@ ENV/
 
 # Intellij idea
 .idea
+
+# Ignore the default settings
+setting
