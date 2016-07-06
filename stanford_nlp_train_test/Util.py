@@ -1,4 +1,5 @@
 import json
+import os
 
 # Hold the application settings
 settings = {}
@@ -11,7 +12,7 @@ def load_settings():
     """
     global settings
     settings.clear()  # should keep the named reference to the mutable object
-    settings.update(json.load(open('/Users/renienj/open-source-projects/support-apps/stanford-nlp-train-test/stanford_nlp_train_test/setting/properties.json')))
+    settings.update(json.load(open(os.path.abspath('./stanford_nlp_train_test/setting/properties.json'))))
 
 
 # Load settings and support data at the application start-up
