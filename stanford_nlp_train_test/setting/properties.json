@@ -1,0 +1,14 @@
+{
+    "classPath": "/Users/renienj/open-source-projects/support-apps/stanford/stanford-postagger",
+    "modelPath": "models/retail_queries.model",
+    "propsPath": "props/retail_queries.model.props",
+    "trainFilePath": "/Users/renienj/open-source-projects/support-apps/retail_postagger/trainingData",
+    "trainFileName": "corpus-",
+    "trainFileRange": 17,
+    "testFilePath": "/Users/renienj/open-source-projects/support-apps/retail_postagger/testingData",
+    "testFileName": "retail_queries",
+    "testFileRange": 5,
+    "dumpFile": "dump/retail_queries.model.dump",
+    "dumpSTDOUT": "dump/retail_queries.model.dump.stdout",
+    "corpusPath": "/Users/renienj/open-source-projects/support-apps/corpus"
+}
