@@ -14,6 +14,9 @@
     <img src="https://travis-ci.org/Renien/stanford-nlp-train-test.svg?branch=master"
          alt="Travis Build">
   </a>
+  <a href="https://codecov.io/gh/Renien/stanford-nlp-train-test">
+    <img src="https://img.shields.io/codecov/c/github/Renien/stanford-nlp-train-test.svg?style=flat-square" alt="Coverage via Codecov" />
+  </a>
 </p>
 
 ## Properties.json File
