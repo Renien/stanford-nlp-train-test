@@ -1,19 +1,15 @@
 import json
 import os
 
-# Hold the application settings
-settings = {}
+# Hold the application conf
+conf = {}
 
 
-def load_settings():
+def load_conf(conf_file):
     """
-    Load settings from the settings json file
+    Load conf from the conf json file
     Encapsulated with in a function to re-load at run time
     """
-    global settings
-    settings.clear()  # should keep the named reference to the mutable object
-    settings.update(json.load(open(os.path.abspath('./stanford_nlp_train_test/setting/properties.json'))))
-
-
-# Load settings and support data at the application start-up
-load_settings()
+    global conf
+    conf.clear()  # should keep the named reference to the mutable object
+    conf.update(json.load(open(os.path.abspath(conf_file))))

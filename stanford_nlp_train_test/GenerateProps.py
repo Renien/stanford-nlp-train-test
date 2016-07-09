@@ -3,11 +3,11 @@ import re
 
 class GenerateProps:
 
-    def __init__(self, commands):
-        self.commands = commands
-        self.path = commands['trainFilePath']
-        self.file_name = commands['trainFileName']
-        self.file_range = commands['trainFileRange']
+    def __init__(self, conf):
+        self.conf = conf
+        self.path = conf['trainFilePath']
+        self.file_name = conf['trainFileName']
+        self.file_range = conf['trainFileRange']
         self.file_list = []
 
     def generate_files(self):
@@ -18,5 +18,5 @@ class GenerateProps:
     def update_props_file(self):
         training_files = 'trainFile = '+';'.join(self.file_list)
 
-        for line in fileinput.input(self.commands['propsPath'], inplace = 1):
+        for line in fileinput.input(self.conf['propsPath'], inplace = 1):
             print re.sub('trainFile.*', training_files, line),
