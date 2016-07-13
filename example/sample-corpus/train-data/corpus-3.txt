@@ -1,0 +1,5 @@
+womens_JJ crew_JJ socks_NNS ._.
+laura_NN conrad_NN ._.
+shark_JJ rotator_NN ._.
+dress_NN shoes_NNS women_JJ ._.
+chaps_JJ petite_NN ._.

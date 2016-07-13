@@ -1,0 +1,5 @@
+womens_JJ socks_NNS ._.
+sippy_JJ cups_NNS ._.
+legwarmers_NNS ._.
+fishing_NN ._.
+coverall_NN ._.
