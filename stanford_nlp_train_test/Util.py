@@ -30,9 +30,12 @@ def _commands():
 
 # Execute the command in shell
 def execute_cmd(cmd):
-    import subprocess
-    std_out = subprocess.check_output([cmd], shell=True, stderr=subprocess.STDOUT)
-    _write_dump_file(std_out)  # Write the std out to the file
+    try:
+        import subprocess
+        std_out = subprocess.check_output([cmd], shell=True, stderr=subprocess.STDOUT)
+        _write_dump_file(std_out)  # Write the std out to the file
+    except subprocess.CalledProcessError as e:
+        print e.output
     pass
 
 
